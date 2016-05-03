@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+	<metadata>
+		<id>UndoRedoBuddy</id>
+		<version>1.0.0</version>
+		<title>UndoRedoBuddy</title>
+		<authors>dmanning23</authors>
+		<owners>dmanning23</owners>
+		<projectUrl>https://github.com/dmanning23/UndoRedoBuddy</projectUrl>
+		<licenseUrl>https://github.com/dmanning23/UndoRedoBuddy/blob/master/LICENSE.txt</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>A simple undo/redo stack using the command pattern</description>
+		<releaseNotes />
+		<copyright>Copyright 2016</copyright>
+		<tags>pcl, windows phone, winphone, android, ios, windows universal, monogame</tags>
+		<dependencies>
+
+			<!--Xamarin.Android-->
+			<group targetFramework="MonoAndroid10">
+			</group>
+
+			<!--Xamarin.iOS Unified-->
+			<group targetFramework="Xamarin.iOS10">
+			</group>
+
+			<!--Win Universal-->
+			<group targetFramework="uap10.0">
+				<dependency id="Microsoft.NETCore.UniversalWindowsPlatform" version="5.1"/>
+			</group>
+
+			<group targetFramework="net451">
+			</group>
+
+		</dependencies>
+	</metadata>
+	<files>
+
+		<!--Xamarin.Android-->
+		<file src="UndoRedoBuddy.Android\bin\Release\UndoRedoBuddy.Android.pdb" target="lib\MonoAndroid10\UndoRedoBuddy.Android.pdb" />
+		<file src="UndoRedoBuddy.Android\bin\Release\UndoRedoBuddy.Android.dll" target="lib\MonoAndroid10\UndoRedoBuddy.Android.dll" />
+
+		<!--Xamarin.iOS Unified-->
+		<file src="UndoRedoBuddy.iOS\bin\Release\UndoRedoBuddy.iOS.pdb" target="lib\Xamarin.iOS10\UndoRedoBuddy.iOS.pdb" />
+		<file src="UndoRedoBuddy.iOS\bin\Release\UndoRedoBuddy.iOS.dll" target="lib\Xamarin.iOS10\UndoRedoBuddy.iOS.dll" />
+
+		<!--Windows Universal-->
+		<file src="UndoRedoBuddy.WindowsUniversal\bin\Release\UndoRedoBuddy.WindowsUniversal.pdb" target="lib\uap10.0\UndoRedoBuddy.WindowsUniversal.pdb" />
+		<file src="UndoRedoBuddy.WindowsUniversal\bin\Release\UndoRedoBuddy.WindowsUniversal.dll" target="lib\uap10.0\UndoRedoBuddy.WindowsUniversal.dll" />
+
+		<!--DesktopGL-->
+		<file src="UndoRedoBuddy.DesktopGL\bin\Release\UndoRedoBuddy.DesktopGL.pdb" target="lib\net451\UndoRedoBuddy.DesktopGL.pdb" />
+		<file src="UndoRedoBuddy.DesktopGL\bin\Release\UndoRedoBuddy.DesktopGL.dll" target="lib\net451\UndoRedoBuddy.DesktopGL.dll" />
+
+	</files>
+</package>

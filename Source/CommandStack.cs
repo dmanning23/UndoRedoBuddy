@@ -5,7 +5,7 @@ namespace UndoRedoBuddy
 	/// <summary>
 	/// This command is a collection of several commands to execute at the same time.
 	/// </summary>
-	public class Macro : ICommand
+	public class CommandStack : ICommand
 	{
 		#region Members
 
@@ -21,7 +21,7 @@ namespace UndoRedoBuddy
 		/// <summary>
 		/// hello, standard constructor!
 		/// </summary>
-		public Macro()
+		public CommandStack()
 		{
 			CommandList = new List<ICommand>();
 		}

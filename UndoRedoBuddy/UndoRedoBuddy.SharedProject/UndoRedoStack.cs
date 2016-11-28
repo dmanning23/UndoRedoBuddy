@@ -45,10 +45,39 @@ namespace UndoRedoBuddy
 		/// <returns>bool: whether or not it was able to execute the command</returns>
 		private bool Execute(ICommand myAction)
 		{
+			//Check if the command can be stacked with the previous one
+			if (StackCommand(myAction))
+			{
+				return true;
+			}
+
 			if (myAction.Execute())
 			{
 				UndoStack.AddLast(myAction);
 				return true;
+			}
+
+			return false;
+		}
+
+		private bool StackCommand(ICommand myAction)
+		{
+			//get the previous item off the stack
+			if (UndoStack.Count > 0)
+			{
+				//check if the previous item is stackable
+				IStackableCommand prevStackable = UndoStack.Last.Value as IStackableCommand;
+				if (null != prevStackable)
+				{
+					//check if the previous and current item can be stacked
+					var nextStackable = myAction as IStackableCommand;
+					if (prevStackable.CompareWithNextCommand(nextStackable))
+					{
+						//stack the previous and current item and execute it
+						prevStackable.StackWithNextCommand(nextStackable);
+						return prevStackable.Execute();
+					}
+				}
 			}
 
 			return false;

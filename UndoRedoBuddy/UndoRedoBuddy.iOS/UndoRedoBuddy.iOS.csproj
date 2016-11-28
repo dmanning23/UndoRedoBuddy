@@ -40,16 +40,8 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\Source\CommandStack.cs">
-      <Link>CommandStack.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Source\ICommand.cs">
-      <Link>ICommand.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Source\UndoRedoStack.cs">
-      <Link>UndoRedoStack.cs</Link>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <Import Project="..\UndoRedoBuddy.SharedProject\UndoRedoBuddy.SharedProject.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

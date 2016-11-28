@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>e1eb61f5-040e-4878-b6dc-5c54700f2c9c</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>UndoRedoBuddy.SharedProject</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)CommandStack.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ICommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IStackableCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UndoRedoStack.cs" />
+  </ItemGroup>
+</Project>

@@ -117,6 +117,38 @@ namespace UndoRedoBuddy.Tests
 			Assert.AreEqual(0, _stack.UndoStack.Count);
 		}
 
+		[Test]
+		public void NotStackable()
+		{
+			var num = new Class2()
+			{
+				Name = "test",
+				Num = 10
+			};
+
+			var num3 = new Class2()
+			{
+				Name = "test1",
+				Num = 10
+			};
+
+			var num1 = new Class1(num)
+			{
+				NextNum = 20
+			};
+
+			var num2 = new Class1(num3)
+			{
+				NextNum = 30
+			};
+
+			_stack.Add(num1);
+			_stack.Add(num2);
+
+			Assert.AreEqual(20, num.Num);
+			Assert.AreEqual(2, _stack.UndoStack.Count);
+		}
+
 		#endregion //Tests
 
 		#region Test Classes

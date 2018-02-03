@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>UndoRedoBuddy</id>
-		<version>1.0.1</version>
+		<version>1.0.2</version>
 		<title>UndoRedoBuddy</title>
 		<authors>dmanning23</authors>
 		<owners>dmanning23</owners>
@@ -47,9 +47,9 @@
 		<file src="UndoRedoBuddy.WindowsUniversal\bin\Release\UndoRedoBuddy.WindowsUniversal.pdb" target="lib\uap10.0\UndoRedoBuddy.WindowsUniversal.pdb" />
 		<file src="UndoRedoBuddy.WindowsUniversal\bin\Release\UndoRedoBuddy.WindowsUniversal.dll" target="lib\uap10.0\UndoRedoBuddy.WindowsUniversal.dll" />
 
-		<!--DesktopGL-->
-		<file src="UndoRedoBuddy.DesktopGL\bin\Release\UndoRedoBuddy.DesktopGL.pdb" target="lib\net451\UndoRedoBuddy.DesktopGL.pdb" />
-		<file src="UndoRedoBuddy.DesktopGL\bin\Release\UndoRedoBuddy.DesktopGL.dll" target="lib\net451\UndoRedoBuddy.DesktopGL.dll" />
+		<!--WindowsDX-->
+		<file src="UndoRedoBuddy.WindowsDX\bin\Release\UndoRedoBuddy.WindowsDX.pdb" target="lib\net451\UndoRedoBuddy.WindowsDX.pdb" />
+		<file src="UndoRedoBuddy.WindowsDX\bin\Release\UndoRedoBuddy.WindowsDX.dll" target="lib\net451\UndoRedoBuddy.WindowsDX.dll" />
 
 	</files>
 </package>

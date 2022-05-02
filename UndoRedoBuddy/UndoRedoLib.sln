@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31727.386
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndoRedoBuddy.Android", "UndoRedoBuddy.Android\UndoRedoBuddy.Android.csproj", "{EC1F857E-4D23-4F24-BB1C-85C8FF9F4E80}"
 EndProject
@@ -10,7 +10,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8C27F6D7-15B6-418F-B314-756FDC991D17}"
 	ProjectSection(SolutionItems) = preProject
 		buildNugetPackages.ps1 = buildNugetPackages.ps1
-		UndoRedoBuddy.Bridge.nuspec = UndoRedoBuddy.Bridge.nuspec
 		UndoRedoBuddy.nuspec = UndoRedoBuddy.nuspec
 	EndProjectSection
 EndProject
@@ -20,14 +19,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndoRedoBuddy.Tests", "Undo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndoRedoBuddy.WindowsDX", "UndoRedoBuddy.WindowsDX\UndoRedoBuddy.WindowsDX.csproj", "{3C84D871-14F5-4CD5-986A-DB6D73CBD730}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndoRedoBuddy.Bridge", "UndoRedoBuddy.Bridge\UndoRedoBuddy.Bridge.csproj", "{83ECE82F-711B-4B6F-B409-4A1FC853CF30}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		UndoRedoBuddy.SharedProject\UndoRedoBuddy.SharedProject.projitems*{3c84d871-14f5-4cd5-986a-db6d73cbd730}*SharedItemsImports = 4
 		UndoRedoBuddy.SharedProject\UndoRedoBuddy.SharedProject.projitems*{4f302ca8-4d40-4714-92d3-c145a10dce5e}*SharedItemsImports = 4
 		UndoRedoBuddy.SharedProject\UndoRedoBuddy.SharedProject.projitems*{6a55d7c8-d1f1-4a0c-9eef-8f62160dbaf3}*SharedItemsImports = 4
-		UndoRedoBuddy.SharedProject\UndoRedoBuddy.SharedProject.projitems*{83ece82f-711b-4b6f-b409-4a1fc853cf30}*SharedItemsImports = 4
 		UndoRedoBuddy.SharedProject\UndoRedoBuddy.SharedProject.projitems*{e1eb61f5-040e-4878-b6dc-5c54700f2c9c}*SharedItemsImports = 13
 		UndoRedoBuddy.SharedProject\UndoRedoBuddy.SharedProject.projitems*{ec1f857e-4d23-4f24-bb1c-85c8ff9f4e80}*SharedItemsImports = 4
 	EndGlobalSection
@@ -142,30 +138,6 @@ Global
 		{3C84D871-14F5-4CD5-986A-DB6D73CBD730}.Release|x64.Build.0 = Release|Any CPU
 		{3C84D871-14F5-4CD5-986A-DB6D73CBD730}.Release|x86.ActiveCfg = Release|Any CPU
 		{3C84D871-14F5-4CD5-986A-DB6D73CBD730}.Release|x86.Build.0 = Release|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.AppStore|Any CPU.ActiveCfg = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.AppStore|Any CPU.Build.0 = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.AppStore|ARM.ActiveCfg = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.AppStore|ARM.Build.0 = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.AppStore|x64.ActiveCfg = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.AppStore|x64.Build.0 = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.AppStore|x86.ActiveCfg = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.AppStore|x86.Build.0 = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Debug|ARM.Build.0 = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Debug|x64.Build.0 = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Debug|x86.Build.0 = Debug|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Release|Any CPU.Build.0 = Release|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Release|ARM.ActiveCfg = Release|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Release|ARM.Build.0 = Release|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Release|x64.ActiveCfg = Release|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Release|x64.Build.0 = Release|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Release|x86.ActiveCfg = Release|Any CPU
-		{83ECE82F-711B-4B6F-B409-4A1FC853CF30}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
